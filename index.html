@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main  id="background" class="font">
+        <section class="padding-top"></section>
+        <h1 id="title" class="center"> Survey Form</h1>
+        <p id="description" class="center">How was your stay?</p>
+        <section class="padding mvcenter">
+        <form id="survey-form" target="thankyou" action="thankyou.html" method="get">
+            <section class="margin-top">
+            <label id="name-label">Name:</label>
+            <input id="name" name="name" type="text" autocomplete="off" placeholder="Name" autofocus required></input><br>
+            <label id="email-label">E-mail:</label>
+            <input id="email" type="email" autocomplete="off" placeholder="name@email.com" required></input><br>
+            <label id="number-label">Mobile Number: </label>
+            <input id="number" type="tel" pattern="[0][9][0-9]{9}" autocomplete="off" placeholder="09xxxxxxxxx" required></input><br>
+            </section>
+            <label id="dropdown-label">Purpose:</label>
+            <select id="dropdown" type="text" name="purpose" list="dropdown" required></input><br>
+                <option value="" disabled selected>Please choose</option>
+                <option value="Staycation">Staycation</option>
+                <option value="Event">Event</option>
+            </select><br>
+            <section class="margin-top">
+            <label>How did you hear about us:</label><br>
+                <input type="radio" id="family" name="source" required>
+                <label for="family">Family and friends</label><br>
+                <input type="radio" id="facebook" name="source" required>
+                <label for="facebook">Facebook</label><br>
+                <input type="radio" id="instagram" name="source" required>
+                <label for="instagram">Instagram</label><br>
+                <input type="radio" id="prints" name="source" required>
+                <label for="prints">Printed advertisement</label><br>
+                <input type="radio" id="others" name="source" required>
+                <label for="others">Others:</label>
+                <input id="others" type="text" autocomplete="off"><br>
+            </section>
+            <section class="margin-top">
+            <label>Amenities used:</label><br>
+                <input type="checkbox" id="room1" value="garden">
+                <label for="room1">Room 1</label><br>
+                <input type="checkbox" id="room2" value="garden">
+                <label for="room2">Room 2</label><br>
+                <input type="checkbox" id="room3" value="garden">
+                <label for="room3">Room 3</label><br>
+                <input type="checkbox" id="pool" value="pool">
+                <label for="pool">Swimming Pool</label><br>
+                <input type="checkbox" id="garden" value="garden">
+                <label for="age.adult">Garden</label><br>
+                <input type="checkbox" id="banquet" value="garden">
+                <label for="banquet">Banquet Hall</label><br>
+            </section>
+            <section class="margin-top">
+            <label for="textarea">Feedback:</label><br>
+            <textarea id="textarea" minlength="10" maxlength="500" placeholder="How can we serve you better?" required></textarea><br>
+            <button id="submit">Submit</button>
+            </section>
+        </form>
+        </section>
+    </main>
+    <footer>Copyright &#169; Nicole Doromal</footer>
+  </body>
+</html>
