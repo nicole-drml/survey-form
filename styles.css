@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 #background {
     min-height: 98vh;
     background-color: #1d878a;
@@ -24,6 +29,7 @@ main.font {
 #textarea {
     width: 30vw;
     height: 10vh;
+    padding: 5px;
 }
 
 footer {
@@ -46,4 +52,48 @@ footer {
 
 .mvcenter {
     margin-left: 30vw;
+}
+
+
+#name, #email {
+    width: 40%;
+    padding: 3px;
+}
+
+#number, #others-comment {
+    width: 25%;
+    padding: 3px;
+}
+
+button {
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(217, 233, 235);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover{
+    background-color: rgba(165, 196, 199, 0.9);
+}
+
+#dropdown {
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3px;
+}
+
+#family, #facebook, #instagram, #prints, #others {
+    cursor: pointer;
+}
+
+#room1, #room2, #room3, #pool, #garden, #banquet{
+    cursor: pointer;
+} 
+
+#room1, #room2, #room3, #pool, #garden, #banquet :after{
+    background-color: aquamarine;
+} 
+
+input {
+    accent-color: rgb(55, 100, 101);
 }
